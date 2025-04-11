@@ -1,1 +1,5 @@
+---- ----
 Apple store
+---- ----
+--init comand--
+npm create vite@latest apple-dimbo-store -- --template react
