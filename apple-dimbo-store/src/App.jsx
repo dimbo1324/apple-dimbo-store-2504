@@ -4,7 +4,6 @@ import Area from "./components/Area";
 function App() {
   return (
     <div className="w-full h-screen grid place-items-center">
-      {/*TODO (1)*/}
       <Area />
     </div>
   );

@@ -1,26 +1,18 @@
-import { motion } from "framer-motion";
-import { handleZoomIn, handleZoomOut } from "../functions and actions/toZoom";
-import "boxicons/css/boxicons.min.css";
+import MotionButton from "./MotionButton";
 
-function Controls() {
+function Controls({ zoomIn, zoomOut, isZoomed }) {
   return (
     <div className="absolute top-3 right-3 space-x-2">
-      <motion.button
-        whileTap={{ scale: 0.9 }}
-        whileHover={{ scale: 1.1 }}
-        className="text-2xl text-pink-400 cursor-pointer transition"
-        onClick={handleZoomIn}
-      >
-        <i className="bx bx-plus"></i>
-      </motion.button>
-      <motion.button
-        whileTap={{ scale: 0.9 }}
-        whileHover={{ scale: 1.1 }}
-        className="text-2xl text-pink-400 cursor-pointer transition"
-        onClick={handleZoomOut}
-      >
-        <i className="bx bx-minus"></i>
-      </motion.button>
+      <MotionButton
+        onClick={zoomIn}
+        disabled={isZoomed}
+        iconClass="bx bx-plus"
+      />
+      <MotionButton
+        onClick={zoomOut}
+        disabled={!isZoomed}
+        iconClass="bx bx-minus"
+      />
     </div>
   );
 }
