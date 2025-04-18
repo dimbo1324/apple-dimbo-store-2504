@@ -1,5 +1,5 @@
+import React from "react";
 import MotionButton from "./MotionButton";
-
 function Controls({ zoomIn, zoomOut, isZoomed }) {
   return (
     <div className="absolute top-3 right-3 space-x-2">
@@ -16,5 +16,4 @@ function Controls({ zoomIn, zoomOut, isZoomed }) {
     </div>
   );
 }
-
 export default Controls;

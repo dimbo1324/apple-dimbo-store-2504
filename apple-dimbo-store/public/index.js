@@ -30,14 +30,12 @@ export const navItems = [
     inactiveIcon: 'bx bxs-folder',
   },
 ]
-
 export const items = [
   { label: 'iPhone', img: 'images/iphone.jpg', pageIndex: 1 },
   { label: 'MacBook', img: 'images/macbook.jpg', pageIndex: 2 },
   { label: 'Smart Watch', img: 'images/watch.jpg', pageIndex: 3 },
   { label: 'iMac', img: 'images/imac.png', pageIndex: 4 },
 ]
-
 export const iphoneModels = [
   {
     name: 'iPhone 16 Pro Max',
@@ -58,7 +56,6 @@ export const iphoneModels = [
     img: 'images/iphone16.png',
   },
 ]
-
 export const macbookModels = [
   {
     chip: 'M2',
@@ -86,7 +83,6 @@ export const macbookModels = [
     icon: 'images/apple-m3-icon.png',
   },
 ]
-
 export const watchModels = [
   {
     imgs: ['images/watch10-side.png', 'images/watch10.png'],
@@ -107,7 +103,6 @@ export const watchModels = [
     desc: ['44mm case size', '10m water resistant', 'Swimproof'],
   },
 ]
-
 export const imacModels = [
   {
     label: 'Green',
