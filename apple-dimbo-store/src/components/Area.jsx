@@ -1,5 +1,7 @@
 import React from "react";
 import Controls from "./base/Controls";
+import LeftBar from "./base/LeftBar";
+
 function Area() {
   const [frameZoom, setFrameZoom] = React.useState(false);
   const zoomIn = () => setFrameZoom(true);
@@ -17,6 +19,7 @@ transition-all duration-100
 ${frameZoom ? "min-w-[97vw] min-h-[97vh]" : ""}
 `}
     >
+      <LeftBar />
       <Controls
         zoomIn={zoomIn}
         zoomOut={zoomOut}

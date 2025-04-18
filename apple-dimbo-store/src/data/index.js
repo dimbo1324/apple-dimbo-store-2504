@@ -1,4 +1,4 @@
-export const navItems = [
+export const leftBarData = [
   {
     label: 'Home',
     icon: 'bx bx-home-alt-2',
