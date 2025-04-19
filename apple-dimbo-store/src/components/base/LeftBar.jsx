@@ -1,11 +1,12 @@
-import React from 'react'
-import {
-  leftBarData
-} from '../../data'
+import React from "react";
+import { leftBarData } from "../../data";
 const LeftBar = () => {
   return (
     <div className="2xl:w-80 xl:w-52 w-44 h-full bg-[#f8f8f8] flex flex-col justify-between pt-5 pl-6 pb-14 md:pb-0">
-      <a href="#" className="2xl:text-2xl xl:text-xl font-light text-[#8e8e8e] mb-14 tracking-wider">
+      <a
+        href="#"
+        className="2xl:text-2xl xl:text-xl font-light text-[#8e8e8e] mb-14 tracking-wider"
+      >
         Something value
       </a>
       <div className="flex flex-col flex-grow">
@@ -20,10 +21,6 @@ const LeftBar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default LeftBar
-
-
-
-
+export default LeftBar;
