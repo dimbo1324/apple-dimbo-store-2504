@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LeftBar from "./base/LeftBar";
-import Controls from "./base/Controls";
+import LeftBar from "./LeftBar";
+import Controls from "./Controls";
 const Area = () => {
   const [frameZoom, setFrameZoom] = useState(false);
   const [activePage, setActivePage] = useState(0);

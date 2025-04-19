@@ -1,5 +1,5 @@
 import React from "react";
-import { leftBarData } from "../../../data";
+import { leftBarData } from "../../data";
 import { SidebarItem } from "./SidebarItem";
 export const SidebarNav = ({ activeIdx, onSelect }) => (
   <nav className="flex flex-col flex-grow">
