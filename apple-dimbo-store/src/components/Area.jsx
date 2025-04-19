@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LeftBar from "./LeftBar";
 import Controls from "./Controls";
+import Home from "./Home";
 const Area = () => {
   const [frameZoom, setFrameZoom] = useState(false);
   const [activePage, setActivePage] = useState(0);
@@ -15,6 +16,9 @@ const Area = () => {
     >
       <LeftBar activeIdx={activePage} handleBarClick={handleBarClick} />
       <Controls zoomIn={zoomIn} zoomOut={zoomOut} isZoomed={frameZoom} />
+      <div className="flex flex-grow">
+        <Home />
+      </div>
     </div>
   );
 };
